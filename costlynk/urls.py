@@ -21,7 +21,7 @@ from .views import *
 
 urlpatterns = [
     path('',dashboard_view,name='dashboard_view'),
-    path('/signup',signup_view,name='signup_view'),
-    path('/login',login_view,name='login_view'),
+    path('signup/',signup_view,name='signup_view'),
+    path('login/',login_view,name='login_view'),
     path("admin/", admin.site.urls),
 ]
